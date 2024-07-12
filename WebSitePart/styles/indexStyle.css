@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 18px;
     background-image: linear-gradient(to right, #17dde4 , #409bf7);
     border-bottom: 2px solid white;
     box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
@@ -32,13 +32,13 @@
     font-weight: 700;
     
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.6);
     transition: 0.5s;
 }
 
 .logoImage{
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 999px;
     border: 1px solid white;
 }
@@ -51,7 +51,7 @@
 
 .mainName{
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     margin-bottom: 20px;
     margin-top: 20px;
     font-family: Playwrite DK Uloopet;
@@ -71,7 +71,7 @@
 }
 .mainCitata{
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 20px;
     font-family: Libre Franklin;
     font-weight: 600;
@@ -84,5 +84,193 @@
     font-weight: 600;
     border-top: 2px solid white;
     box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
-    /* background-image: ; */
+    background-image: linear-gradient(to right, #17dde4 , #409bf7);
+    padding: 20px;
 }
+
+
+.startOrderingButton{
+    text-align: center;
+    margin: 10px;
+    /* padding: 10px; */
+    font-size: 50px;
+    font-family: Playwrite DK Uloopet;
+    background-color: #17dde4;
+    border-radius: 15px;
+   
+    
+    
+}
+.startOrderingButton a{
+    text-decoration: none;
+    font-style: bold;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.startOrderingButton:hover {
+    background-color: #000000;
+    color: #409bf7;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    
+    
+}
+
+.info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    font-family: Libre Franklin;
+}
+.info .testimonialsTitle {
+    text-align: start;
+}
+
+.infoTitle, .featuresTitle, .testimonialsTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.infoText {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.featuresList li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to right, #17dde4 , #409bf7);
+    border-top: 2px solid white;
+    
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    font-family: Libre Franklin;
+}
+.footer ul li{
+   font-family: Libre Franklin;
+}
+.footer ul li a{ 
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+.footer ul li a:hover{
+    cursor: pointer;
+    font-weight: 700;
+    
+    color: white;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.footer p{
+    font-size: 20px;
+    font-family: Libre Franklin;
+}
+.footer .socialsFooter{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+.footer .socialsFooter a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+.footer .socialsFooter a:hover{
+    cursor: pointer;
+    font-weight: 700;
+    
+    color: white;
+    transition: all 0.5s;
+    
+    animation: spin 0.8s ease-in-out forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1.2);
+    }
+    30% {
+        transform: scale(1.2) rotate(10deg);
+    }
+    50% {
+        border-radius: 50%;
+        transform: scale(0.8) rotate(10deg);
+    }
+    100% {
+        color: indigo;
+    }
+}
+
+.footer .ulFooter li:hover {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
