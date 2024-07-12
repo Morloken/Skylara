@@ -1,0 +1,17 @@
+
+
+.header{
+    display: flex;
+}
+.header .navUl{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    border: 1px solid black;
+}
+
