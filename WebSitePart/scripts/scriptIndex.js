@@ -3,7 +3,7 @@ window.addEventListener('scroll', function() {
     var headerBookingButtonContainer = document.getElementById('headerBookingButtonContainer');
     var main = document.querySelector('.main');
     
-    if (window.scrollY > main.offsetHeight) {
+    if (window.scrollY > (main.offsetHeight - bookingButton.offsetHeight - 100)) {
         if (!headerBookingButtonContainer.contains(bookingButton)) {
             headerBookingButtonContainer.appendChild(bookingButton);
         }
