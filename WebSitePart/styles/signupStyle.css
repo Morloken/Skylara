@@ -332,12 +332,12 @@ body {
 }
 
 /*New For omnly this page-------------------------------------------------------------------------*/ 
-.signupForm {
+.signup{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
+    
     padding: 2vh 0;
     background-image: url(../Images/plane4.jpg);
     background-size: cover;
@@ -347,6 +347,7 @@ body {
     
     
 } 
+
 .signup h2{
 
     font-family: 'Libre Franklin', sans-serif;
@@ -355,5 +356,37 @@ body {
     text-align: center;
     background-color: #409bf7;
     padding: 1vw;
-}   
+    border-radius: 1vh;
+    width: 45vw;
+}  
+.signup form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    padding: 2vh 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius:0 0 1vh 1vh;
+    width: 35vw;
+    height: 60vh;
+    color: white;   
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3vh;
+    
+    
+}
+.signup form input{
+    width: 30vw;
+    height: 3vh;
+    border-radius: 1vh;
+    border: none;
+    font-size: 2vh;
+}
+.signup form input::placeholder{
+    text-align: center;
+    font-size: 2vh;
+}
+
                   
