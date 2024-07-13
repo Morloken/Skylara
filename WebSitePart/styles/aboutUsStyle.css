@@ -331,16 +331,20 @@ body {
 
 }
 /*New code only for this page-----------------------------------------------------------------*/
+
+
 .aboutUs{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vh;
     padding: 2vh;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .aboutUs h2{
     font-size: 5vh;
     text-align: center;
+    color: white;
 }
 .persons{
     display: flex;
@@ -354,6 +358,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1vh;
     width: 20vw;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2vh;
+}
+.person .personName{
+    font-size: 4vh;
+}
+.person .personText{
+    font-size: 3vh;
+}
+
+
+
+@media (max-width: 1024px) {
+   .persons{
+    flex-direction: column;
+   }
+   .person{
+    width: 60vw;
+   }
+   
 }
