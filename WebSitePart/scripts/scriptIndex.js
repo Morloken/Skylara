@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
        
        
         autoplay: {
-            delay: 2500,
+            delay: 4000,
         },
         loop: true,
     });
