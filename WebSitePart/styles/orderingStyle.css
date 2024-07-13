@@ -119,60 +119,25 @@ body {
     background-color: rgb(252, 216, 12);
     border-radius: 999px;
 }
-
-.mainCitata {
-    text-align: center;
-    font-size: 2.5vw;
-    margin-bottom: 4vh;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
-    color: whitesmoke;
-    border-top: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 2vh 2vh;
-    padding: 0 5vw;
-}
-
-.ordering {
-    text-align: center;
-    margin-bottom: 4vh;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 500;
-    border-top: 2px solid white;
-    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+.divider {
+    width: 100%;
+    height: 10vh;
     background-image: linear-gradient(to right, #17dde4, #409bf7);
-    padding: 4vh 5vw;
-    border-radius: 2vh;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 0 0 2vh 2vh;
 }
 
-.ordering p {
-    color: white;
-    font-size: 1.5vw;
-}
 
-.startOrderingButton {
-    text-align: center;
-    margin: 2vh;
-    font-size: 2.0vw;
-    font-family: 'Playwrite DK Uloopet', sans-serif;
-    background-color: #17dde4;
-    border-radius: 2vh;
-}
 
-.startOrderingButton a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 1vh 2vw;
-    border-radius: 1vw;
-}
 
-.startOrderingButton:hover {
-    background-color: #000000;
-    color: #409bf7;
-    cursor: pointer;
-    animation: pulse 1s infinite;
-}
+
+
+
+
+
+
+
 
 
 
@@ -313,9 +278,7 @@ body {
         display: block;
     }
 
-    .bookingButton {
-        display: none;
-    }
+
 
     .footer {
         flex-direction: column;
@@ -342,9 +305,7 @@ body {
         display: none;
     }
 
-    .bookingButton {
-        display: block;
-    }
+  
 }
 
 @media (min-width: 1025px) {
@@ -362,10 +323,52 @@ body {
         display: none;
     }
 
-    .bookingButton {
-        display: block;
-    }
 }
 
 
 /*New, only for this page----------------------------------------------------*/
+.sales{
+    display: flex;
+    gap: 2vh;
+    padding: 2vh;
+    /* margin-top: 20vh; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Images/plane3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 2vh 5vw;
+
+}
+.sale{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh;
+    text-align: center;
+    border-radius: 1vh;
+    width: 20vw;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.sale .saleDescription{
+    font-size: 2vh;
+    font-weight: 500;
+    
+}
+.sale .saleCountry{ 
+    font-size: 3vh;
+    color: #74b1ee;
+}
+.sale .salePrice{
+    font-size: 3vh;
+    color: #08fb0c;
+    border-top: 2px solid white;
+    margin-top: 1.5vh;
+}

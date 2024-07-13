@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skylara/Ordering</title>
     <link rel="stylesheet" href="../styles/orderingStyle.css" />
 
     <link rel="icon" type="image/png" href="../Images/logo.png" />
-    
+
     <!--Adding font Playtime Danmark Ulooopet-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,55 +42,75 @@
     <script src="../scripts/scriptOrdering.js" defer></script>
 
     <!-- Adding Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Adding Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header" id="header">
-        <div class="logo">
-          <a href="../Htmls/index.html">
-            <img class="logoImage" src="../Images/logo.png" alt="logo" />
-          </a>
+      <div class="logo">
+        <a href="../Htmls/index.html">
+          <img class="logoImage" src="../Images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="menuButton" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav id="nav">
+        <ul class="navUl">
+          <li class=""><a href="../Htmls/index.html">Головна</a></li>
+          <li class=""><a href="../Htmls/contact.html">Контакти</a></li>
+          <li class=""><a href="../Htmls/ordering.html">Замовлення</a></li>
+          <li class=""><a href="#">Профіль</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <h1 class="mainName animate__animated animate__lightSpeedInLeft">
+        Skylara
+      </h1>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="sales">
+      <div class="sale">
+        <h2 class="saleName">Замовлення 1</h2>
+        <h3 class="saleCountry">France</h3>
+        <img src="" alt="salePhoto" />
+        <div class="saleInfo">
+          <p class="saleDescription">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,
+            blanditiis.
+          </p>
+          <p class="salePrice">1000$</p>
         </div>
-  
-        <div class="menuButton" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-        <nav id="nav">
-  
-          <ul class="navUl">
-            <li class=""><a href="../Htmls/index.html">Головна</a></li>
-            <li class=""><a href="../Htmls/contact.html">Контакти</a></li>
-            <li class=""><a href="../Htmls/ordering.html">Замовлення</a></li>
-            <li class=""><a href="#">Профіль</a></li>
-          </ul>
-        </nav>
-  
-        <div id="headerBookingButtonContainer"></div>
-      </header>
 
+        <button class="saleBuyButton">Купити</button>
+      </div>
+    </div>
 
+    <footer class="footer" id="footer">
+      <div class="navFooter">
+        <ul class="ulFooter">
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Відгуки</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+      <p>© 2024. Всі права захищені</p>
 
-
-
-
-
-      
-      <footer class="footer" id="footer">
-        <div class="navFooter">
-          <ul class="ulFooter">
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#">Відгуки</a></li>
-            <li><a href="#">Контакти</a></li>
-          </ul>
-        </div>
-        <p>© 2024. Всі права захищені</p>
-  
-        <div class="socialsFooter">
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
-      </footer>
-</body>
+      <div class="socialsFooter">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
