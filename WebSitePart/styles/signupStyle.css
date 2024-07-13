@@ -434,3 +434,22 @@ body {
   .signup.unfolded form {
     animation: unfold 0.5s forwards;
   }                  
+
+
+@media screen and (max-width: 768px) {
+
+    .signup h2{
+        width: 80vw;
+    }
+
+    .signup form{
+        width: 80vw;
+    }
+    .signup form input{
+        width: 70vw;
+    }
+    .signup form button{
+        width: 60vw;
+    }
+    
+}
