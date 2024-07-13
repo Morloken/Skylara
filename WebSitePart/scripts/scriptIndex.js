@@ -52,7 +52,7 @@ window.addEventListener('resize', function() {
 
 
 
-/*MagicLib */
+/*Magic */
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
