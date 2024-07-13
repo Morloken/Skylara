@@ -45,8 +45,11 @@
 
 .navUl li a:hover {
     cursor: pointer;
-    font-weight: 700;
+    /* font-weight: 700; */
     color: white;
+
+    text-decoration: underline; 
+
     transform: scale(1.2);
     transition: 0.5s;
 }
@@ -401,7 +404,7 @@
 .footer ul li a{ 
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: 600;
     padding: 10px;
 }
@@ -409,13 +412,14 @@
     cursor: pointer;
     font-weight: 700;
     
-    color: white;
+    text-decoration: underline;
     transform: scale(1.2);
     transition: all 0.5s;
 }
 .footer p{
     font-size: 20px;
     font-family: Libre Franklin;
+    color: white;
 }
 .footer .socialsFooter{
     display: flex;
@@ -424,7 +428,7 @@
 }
 .footer .socialsFooter a{
     text-decoration: none;
-    color: black;
+    color: white    ;
     font-weight: 600;
     padding: 10px;
 }
@@ -448,9 +452,10 @@
     50% {
         border-radius: 50%;
         transform: scale(0.8) rotate(10deg);
+        color: indigo;
     }
     100% {
-        color: indigo;
+        color: white;
     }
 }
 
