@@ -1,153 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Skylara</title>
-    <link rel="stylesheet" href="../styles/indexStyle.css">
+    <link rel="stylesheet" href="../styles/indexStyle.css" />
 
     <!--Adding font Playtime Danmark Ulooopet-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
-        rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Adding font Libre Franklin-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
 
-    
     <!--Adding font Animate CSS-->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!--Adding font awesome-->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css' integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==' crossorigin='anonymous'/>
-
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+      integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+      crossorigin="anonymous"
+    />
 
     <!--Adding ScriptIndex.js-->
     <script src="../scripts/scriptIndex.js" defer></script>
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <header class="header" id="header">
-        <div class="logo">
-            <a href="../Htmls/index.html">
-                <img class="logoImage" src="../Images/logo.png" alt="logo">
-            </a>
-        </div>
-    
-        <nav id="nav">
-            <ul class="navUl">
-                <li class=""><a href="#">Home</a></li>
-                <li class=""><a href="#">Contacts</a></li>
-                <li class=""><a href="#">Orders</a></li>
-                <li class=""><a href="#">Profile</a></li>
-            </ul>
-        </nav>
-        
-        <div id="headerBookingButtonContainer"></div>
+      <div class="logo">
+        <a href="../Htmls/index.html">
+          <img class="logoImage" src="../Images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <nav id="nav">
+        <ul class="navUl">
+          <li class=""><a href="#">Home</a></li>
+          <li class=""><a href="#">Contacts</a></li>
+          <li class=""><a href="#">Orders</a></li>
+          <li class=""><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+
+      <div id="headerBookingButtonContainer"></div>
     </header>
-    
 
     <div class="main" id="">
-        <h1 class="mainName     animate__animated animate__lightSpeedInLeft">Skylara</h1>
-        <p class="mainCitata    animate__animated animate__lightSpeedInLeft">Бронюйте подорожі у кожен куточок світу!</p>
+      <h1 class="mainName animate__animated animate__lightSpeedInLeft">
+        Skylara
+      </h1>
+      <p class="mainCitata animate__animated animate__lightSpeedInLeft">
+        Бронюйте подорожі у кожен куточок світу!
+      </p>
 
-        <div class="ordering">
-            <p>Почніть бронювання квитків прямо тут:</p>
-            <button id="bookingButton" class="startOrderingButton   animate__animated animate__tada"><a href="#">Бронювання</a></button>
-
-        </div>
-
+      <div class="ordering">
+        <p>Почніть бронювання квитків прямо тут:</p>
+        <button
+          id="bookingButton"
+          class="startOrderingButton animate__animated animate__tada"
+        >
+          <a href="#">Бронювання</a>
+        </button>
+      </div>
     </div>
 
     <div class="info">
-        <h2 class="infoTitle">Чому варто обрати Skylara?</h2>
-        <p class="infoText">Skylara - ваш надійний партнер у світі авіаперельотів. Ми пропонуємо найкращі ціни, зручний інтерфейс для бронювання та цілодобову підтримку. Приєднуйтесь до нас та відкривайте нові горизонти власних подорожей!</p>
-        
-        <h3 class="featuresTitle">Переваги користування Skylara</h3>
-        <ul class="featuresList">
-            <li>
-                <p>Широкий вибір авіарейсів</p>
-                <img src="../Images/salon.jpg" alt="photoOfFeature">
-            </li>
-            <li>
-                <p>Конкурентні ціни</p>
-                <img src="../Images/prices.jpg" alt="photoOfFeature">
-            </li>
-            <li>
-                <p>Зручний процес бронювання</p>
-                <img src="../Images/booking.jpg" alt="photoOfFeature">
-            </li>
-            <li>
-                <p>Підтримка клієнтів цілодобово</p>
-                <img src="../Images/support.jpg" alt="photoOfFeature">
-            </li>
-            <li>
-                <p>Спеціальні пропозиції та знижки</p>
-                <img src="../Images/sales.jpg" alt="photoOfFeature">
-            </li>
-            <li>
-                <p>Позитивні відгуки та репутація</p>
-                <img src="../Images/vidguki.jpg" alt="photoOfFeature">
-            </li>
-        </ul>
+      <h2 class="infoTitle">Чому варто обрати Skylara?</h2>
+      <p class="infoText">
+        Skylara - ваш надійний партнер у світі авіаперельотів. Ми пропонуємо
+        найкращі ціни, зручний інтерфейс для бронювання та цілодобову підтримку.
+        Приєднуйтесь до нас та відкривайте нові горизонти власних подорожей!
+      </p>
 
-        <h3 class="testimonialsTitle">Відгуки наших клієнтів:</h3>
-        <div class="testimonials">
-            <div class="testemonial">
-                <img src="" alt="testemonialPhoto">
-                <p class="testimonial">"Skylara зробила мою подорож незабутньою! Легке бронювання і чудова підтримка."</p>
-                <h4>Марія</h4>
-            </div>
-            <div class="testemonial">
-                <img src="" alt="testemonialPhoto">
-                <p class="testimonial">"Завжди користуюся Skylara для бізнес-подорожей. Надійно і зручно."</p>
-                <h4>Олександр</h4>
-            </div>
-            <div class="testemonial">
-                <img src="" alt="testemonialPhoto">
-                <p class="testimonial">"Рекомендую всім! Найкращі ціни та відмінний сервіс."</p>
-                <h4>Наталя</h4>
-            </div>
+      <h3 class="featuresTitle">Переваги користування Skylara</h3>
+      <ul class="featuresList">
+        <li>
+          <p>Широкий вибір авіарейсів</p>
+          <img src="../Images/salon.jpg" alt="photoOfFeature" />
+        </li>
+        <li>
+          <p>Конкурентні ціни</p>
+          <img src="../Images/prices.jpg" alt="photoOfFeature" />
+        </li>
+        <li>
+          <p>Зручний процес бронювання</p>
+          <img src="../Images/booking.jpg" alt="photoOfFeature" />
+        </li>
+        <li>
+          <p>Підтримка клієнтів цілодобово</p>
+          <img src="../Images/support.jpg" alt="photoOfFeature" />
+        </li>
+        <li>
+          <p>Спеціальні пропозиції та знижки</p>
+          <img src="../Images/sales.jpg" alt="photoOfFeature" />
+        </li>
+        <li>
+          <p>Позитивні відгуки та репутація</p>
+          <img src="../Images/vidguki.jpg" alt="photoOfFeature" />
+        </li>
+      </ul>
+
+      <h3 class="testimonialsTitle">Відгуки наших клієнтів:</h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial">
+            <img src="../Images/testemonial3.jpg" alt="testemonialPhoto" />
+            <p class="testimonialP">
+              "Skylara зробила мою подорож незабутньою! Легке бронювання і
+              чудова підтримка."
+            </p>
+            <h4>Марія</h4>
+          </div>
+          <div class="swiper-slide testimonial">
+            <img src="../Images/testemonial1.jpg" alt="testemonialPhoto" />
+            <p class="testimonialP">
+              "Завжди користуюся Skylara для бізнес-подорожей. Надійно і
+              зручно."
+            </p>
+            <h4>Олександр</h4>
+          </div>
+          <div class="swiper-slide testimonial">
+            <img src="../Images/testemonail2.jpg" alt="testemonialPhoto" />
+            <p class="testimonialP">
+              "Рекомендую всім! Найкращі ціни та відмінний сервіс."
+            </p>
+            <h4>Наталя</h4>
+          </div>
+          
         </div>
+        
+        <div class="swiper-button-next"></i></div>
+        <div class="swiper-button-prev"></div>
+        
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
 
     <footer class="footer" id="footer">
-        <div class="navFooter">    
-                    <ul class="ulFooter">
-                        <li><a href="#">Про нас</a></li>
-                        <li><a href="#">Відгуки</a></li>
-                        <li><a href="#">Контакти</a></li>
-                    </ul> 
-        </div>
-        <p>© 2024. Всі права захищені</p>
+      <div class="navFooter">
+        <ul class="ulFooter">
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Відгуки</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+      <p>© 2024. Всі права захищені</p>
 
-        <div class="socialsFooter">
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
+      <div class="socialsFooter">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
     </footer>
 
     <!-- <div id="preloader" class="">
         <div class=""></div>
     </div> -->
-
-</body>
-
+  </body>
 </html>

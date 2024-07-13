@@ -195,7 +195,7 @@
 
 .info {
     text-align: center;
-    padding: 2і0px 20px;
+    padding: 20px 20px;
     background-color: #f4f4f4;
     font-family: Libre Franklin;
 }
@@ -219,7 +219,6 @@
     margin: 0 20vw 40px;
     display: flex;
 
-    /* justify-content: space-between;      */
     flex-wrap: wrap;
     gap: 10px;
 
@@ -250,13 +249,11 @@
 .featuresList li:hover {
     background-color: rgba(128, 255, 0, 0.222);
 }
-
 .testimonials {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -273,7 +270,49 @@
     gap: 10px;
 }
 
+.testimonial img {
+    width: 255px;
+    height: 255px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+   
+}
 
+/* slider */
+.swiper-container {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.swiper-slide img {
+    width: 255px;
+    height: 255px;
+    object-fit: cover;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+/* slider end*/
 
 
 
