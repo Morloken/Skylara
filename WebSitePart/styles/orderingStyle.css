@@ -357,6 +357,12 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
+.sale:hover{
+    cursor: pointer;
+    /* transform: scale(1.1); */
+    transition: all 0.5s; 
+    background-color: #08fb0c61;      
+}
 .sale .saleDescription{
     font-size: 2vh;
     font-weight: 500;
@@ -371,4 +377,30 @@ body {
     color: #08fb0c;
     border-top: 2px solid white;
     margin-top: 1.5vh;
+}
+.sale img{
+    width: 100%;    
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 1vh;
+    border: 1px solid white;  
+}
+.saleBuyButton{
+    background-color: #08fb0c;
+    border: none;
+    color: white;
+    font-size: 3vh;
+    padding: 1vh 1.5vw;
+    border-radius: 1vh;
+    font-family: 'Libre Franklin', sans-serif;      
+}
+.saleBuyButton:hover{
+    cursor: pointer;
+    background-color: #000100;            
+    transition: all 0.5s; 
+}
+.saleDiscount{
+    font-size: 1.8svh;
+    color: #ff2200d3;
+    text-decoration: line-through;
 }
