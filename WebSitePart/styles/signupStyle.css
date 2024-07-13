@@ -386,7 +386,7 @@ body {
 }
 .signup form input{
     width: 30vw;
-    height: 3vh;
+    height: 4.5vh;
     border-radius: 1vh;
     border: none;
     font-size: 2vh;
@@ -394,6 +394,22 @@ body {
 .signup form input::placeholder{
     text-align: center;
     font-size: 2vh;
+}
+
+.signup form button{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 1vh;
+    border: none;
+    font-size: 3vh;
+    background-color: #409bf7;
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    cursor: pointer;
+}
+
+.signup form button:hover{
+    background-color: #0f84f9;
 }
 
 
