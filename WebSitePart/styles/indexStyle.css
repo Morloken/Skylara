@@ -195,7 +195,7 @@
 
 .info {
     text-align: center;
-    padding: 40px 20px;
+    padding: 2і0px 20px;
     background-color: #f4f4f4;
     font-family: Libre Franklin;
 }
@@ -218,15 +218,17 @@
     padding: 0;
     margin: 0 20vw 40px;
     display: flex;
+
+    /* justify-content: space-between;      */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 
     font-size: 20px;
     font-family: Libre Franklin;
 }
 
 .featuresList li {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
     flex-basis: calc(50% - 10px);
 
@@ -234,16 +236,19 @@
     align-items: center;
     flex-direction: column-reverse;
     gap: 10px;
-    border: 1px solid black;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .featuresList li img {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.featuresList li:hover {
+    background-color: rgba(128, 255, 0, 0.222);
 }
 
 .testimonials {
