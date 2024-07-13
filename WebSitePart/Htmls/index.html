@@ -31,6 +31,14 @@
     <!--Adding font awesome-->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css' integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==' crossorigin='anonymous'/>
 
+
+
+
+    <!--Adding ScriptIndex.js-->
+    <script src="../scripts/scriptIndex.js" defer></script>
+
+
+    
 </head>
 
 <body>
@@ -40,7 +48,7 @@
                 <img class="logoImage" src="../Images/logo.png" alt="logo">
             </a>
         </div>
-
+    
         <nav id="nav">
             <ul class="navUl">
                 <li class=""><a href="#">Home</a></li>
@@ -49,8 +57,10 @@
                 <li class=""><a href="#">Profile</a></li>
             </ul>
         </nav>
-
+        
+        <div id="headerBookingButtonContainer"></div>
     </header>
+    
 
     <div class="main" id="">
         <h1 class="mainName     animate__animated animate__lightSpeedInLeft">Skylara</h1>
@@ -58,7 +68,8 @@
 
         <div class="ordering">
             <p>Почніть бронювання квитків прямо тут:</p>
-            <button class="startOrderingButton   animate__animated animate__tada" ><a href="#">Бронювання</a></button>
+            <button id="bookingButton" class="startOrderingButton   animate__animated animate__tada"><a href="#">Бронювання</a></button>
+
         </div>
 
     </div>
