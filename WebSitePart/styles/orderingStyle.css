@@ -1,0 +1,371 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden; /* Заборона горизонтальної прокрутки */
+    overflow-y: auto; /* Включення вертикальної прокрутки, якщо контент виходить за межі */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vh 1.5vw;
+    background-image: linear-gradient(to right, #17dde4, #409bf7);
+    border-bottom: 2px solid white;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 0px 0px 10px 10px;
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto; /* Вирівнюємо вправо */
+    margin-right: auto; /* Вирівнюємо вліво */
+}
+
+.menuButton {
+    padding: 1.5vh 1.5vw;
+    border-radius: 2vw;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navUl {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    font-size: 1.0vh;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 auto;
+}
+
+.navUl li {
+    display: flex;
+    align-items: center;
+}
+
+.navUl li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 1vh 1.5vw;
+}
+
+.navUl li a:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.logoImage {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.logoImage:hover {
+    transform: perspective(500px) rotateY(180deg) scale(1.2);
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+}
+
+.main {
+    background-image: url("../Images/plane.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.mainName {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 4vh;
+    margin-top: 30vh;
+    font-family: 'Playwrite DK Uloopet', sans-serif;
+    position: relative;
+    color: white;
+}
+
+.mainName::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(252, 216, 12);
+    border-radius: 999px;
+}
+
+.mainCitata {
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 4vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+    border-top: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 2vh 2vh;
+    padding: 0 5vw;
+}
+
+.ordering {
+    text-align: center;
+    margin-bottom: 4vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    border-top: 2px solid white;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #17dde4, #409bf7);
+    padding: 4vh 5vw;
+    border-radius: 2vh;
+}
+
+.ordering p {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.startOrderingButton {
+    text-align: center;
+    margin: 2vh;
+    font-size: 2.0vw;
+    font-family: 'Playwrite DK Uloopet', sans-serif;
+    background-color: #17dde4;
+    border-radius: 2vh;
+}
+
+.startOrderingButton a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 1vh 2vw;
+    border-radius: 1vw;
+}
+
+.startOrderingButton:hover {
+    background-color: #000000;
+    color: #409bf7;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    background-image: linear-gradient(to right, #17dde4, #409bf7);
+    border-top: 2px solid white;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    font-size: 2.0vh;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.footer ul li {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 1vh 1.5vw;
+}
+
+.footer ul li a:hover {
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.footer p {
+    font-size: 1.5vh;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+}
+
+.footer .socialsFooter {
+    display: flex;
+    gap: 2vw;
+    font-size: 2.5vh;
+}
+
+.footer .socialsFooter a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 1vh 1.5vw;
+}
+
+.footer .socialsFooter a:hover {
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    transition: all 0.5s;
+    animation: spin 0.8s ease-in-out forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1.2);
+    }
+    30% {
+        transform: scale(1.2) rotate(10deg);
+    }
+    50% {
+        border-radius: 50%;
+        transform: scale(0.8) rotate(10deg);
+        color: indigo;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.footer .ulFooter li:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/*Footer end*/
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 2vh 2vw;
+    }
+    .mainName{
+        font-size: 15vw;
+
+    }
+
+    .navUl {
+        display: none;
+        flex-direction: column;
+        gap: 2vh;
+        font-size: 2vh;
+    }
+
+    .navUl.mobile-visible {
+        display: flex;
+    }
+
+    .navUl li {
+        margin: 0;
+    }
+
+    .logoImage {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .bookingButton {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 2vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 2.5vh 2.5vw;
+    }
+
+    .navUl {
+        gap: 2.5vw;
+        font-size: 2.5vh;
+    }
+
+    .logoImage {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .bookingButton {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navUl {
+        gap: 3vw;
+        font-size: 3vh;
+    }
+
+    .logoImage {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .bookingButton {
+        display: block;
+    }
+}
+
+
+/*New, only for this page----------------------------------------------------*/
