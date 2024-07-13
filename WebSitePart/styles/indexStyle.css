@@ -216,12 +216,34 @@
 .featuresList {
     list-style: none;
     padding: 0;
-    margin-bottom: 40px;
+    margin: 0 20vw 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    font-size: 20px;
+    font-family: Libre Franklin;
 }
 
 .featuresList li {
     font-size: 20px;
     margin-bottom: 10px;
+    flex-basis: calc(50% - 10px);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.featuresList li img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .testimonials {
