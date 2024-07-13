@@ -195,15 +195,28 @@
     
 }
 
+.divider {
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to right, #17dde4 , #409bf7);
+    border-top: 4px solid white ;
+    border-bottom: 4px solid white ;
+    border-radius: 0 0 15px 15px;
+}
+
+
+
+
+
+
 .info {
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px 0;
     background-image: url("../Images/plane2.jpg");
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    border-top:4px solid white ;
     font-family: Libre Franklin;
     text-align: start;
 }
@@ -215,22 +228,26 @@
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    margin: 0 20px;
 }
 .infoTitle, .featuresTitle{
     text-align: center;
 }
 .infoText {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    margin: 10px 20px;
+
+    padding: 10px;
 }
 
 .featuresList {
     list-style: none;
     padding: 0;
-    margin: 0 10vw 40px;
+    margin: 20px 10vw 40px;
     display: flex;
 
     flex-wrap: wrap;
@@ -256,8 +273,8 @@
     color: white;
 }
 .featuresList li img {
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -272,6 +289,7 @@
 .testimonials {
     background-color: white;
     padding: 20px;
+    /* margin: 20px 10vw;   */
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -288,6 +306,7 @@
     text-align: center;
     gap: 10px;
     margin-bottom: 20px;
+    
 }
 .testimonialP{
     text-align: center;
@@ -337,10 +356,10 @@
 }
 
 .swiper-slide img {
-    width: 255px;
-    height: 255px;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
     margin-bottom: 10px;
 }
