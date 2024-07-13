@@ -536,3 +536,14 @@ body {
         display: block;
     }
 }
+
+
+/* Magic Lib */
+.magictime {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .magictime.visible {
+    opacity: 1;
+  }
