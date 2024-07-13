@@ -374,6 +374,13 @@ body {
     color: white;   
     font-family: 'Libre Franklin', sans-serif;
     font-size: 3vh;
+
+
+    /* Initial state */
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
     
     
 }
@@ -389,4 +396,25 @@ body {
     font-size: 2vh;
 }
 
-                  
+
+
+
+
+/* Keyframes for the unfold animation */
+@keyframes unfold {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  /* Triggered state */
+  .signup.unfolded form {
+    animation: unfold 0.5s forwards;
+  }                  
