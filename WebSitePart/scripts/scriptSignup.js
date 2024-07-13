@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+       // window.location.href = "../Htmls/index.html"; перехід на головну сторінку
+        
 
-      
       document.getElementById("username").value = "";
       document.getElementById("password").value = "";
       document.getElementById("email").value = "";
