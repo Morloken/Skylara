@@ -18,6 +18,7 @@
     right: 0;
     z-index: 1000;
     border-radius: 0px 0px 10px 10px;
+    
 }
 
 .navUl {
@@ -27,6 +28,7 @@
     font-size: 20px;
     font-family: Libre Franklin;
     margin: 0 auto; 
+    
 }
 
 .navUl li {
@@ -36,7 +38,7 @@
 
 .navUl li a { 
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
     padding: 10px;
 }
@@ -196,27 +198,39 @@
 .info {
     text-align: center;
     padding: 20px 20px;
-    background-color: #f4f4f4;
+    background-image: url("../Images/plane2.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top:4px solid white ;
     font-family: Libre Franklin;
-}
-.info .testimonialsTitle {
     text-align: start;
 }
+
 
 .infoTitle, .featuresTitle, .testimonialsTitle {
     font-size: 40px;
     margin-bottom: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
 }
-
+.infoTitle, .featuresTitle{
+    text-align: center;
+}
 .infoText {
     font-size: 20px;
     margin-bottom: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
 }
 
 .featuresList {
     list-style: none;
     padding: 0;
-    margin: 0 20vw 40px;
+    margin: 0 10vw 40px;
     display: flex;
 
     flex-wrap: wrap;
@@ -238,6 +252,8 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
 }
 .featuresList li img {
     width: 15vw;
@@ -248,6 +264,10 @@
 
 .featuresList li:hover {
     background-color: rgba(128, 255, 0, 0.222);
+}
+.testimonialsTitle{
+    text-align: center;
+    font-weight: bold;
 }
 .testimonials {
     background-color: white;
@@ -261,15 +281,21 @@
 }
 
 .testimonial {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
-
+.testimonialP{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-family: Libre Franklin;            
+}
 .testimonial img {
     width: 255px;
     height: 255px;
@@ -279,7 +305,12 @@
     margin-bottom: 10px;
    
 }
-
+.swiper-slide .testimonial h4{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Libre Franklin;
+    margin-bottom: 10px;
+}
 /* slider */
 /* Загальні стилі для слайдера */
 .swiper-container {
@@ -295,14 +326,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .swiper-slide img {
