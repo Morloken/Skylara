@@ -21,6 +21,17 @@
     
 }
 
+.menuButton{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menuButton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
 .navUl {
     display: flex;
     list-style: none;
@@ -482,3 +493,90 @@
       transform: scale(1);
     }
   }
+
+
+
+
+
+  /*---------------------------------------------------------------Media Queries*/
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navUl {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .navUl.mobile-visible {
+        display: flex;
+    }
+
+    .navUl li {
+        margin: 0;
+    }
+
+    .logoImage {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .bookingButton {
+        display: none;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 15px;
+    }
+
+    .navUl {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .logoImage {
+        width: 90px;
+        height: 90px;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .bookingButton {
+        display: block;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .navUl {
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    .logoImage {
+        width: 110px;
+        height: 110px;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .bookingButton {
+        display: block;
+    }
+}
