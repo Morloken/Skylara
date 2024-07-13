@@ -339,4 +339,21 @@ body {
     align-items: center;
     gap: 1vh;
     padding: 2vh 0;
-}                   
+    background-image: url(../Images/plane4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+} 
+.signup h2{
+
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    background-color: #409bf7;
+    padding: 1vw;
+}   
+                  
