@@ -370,6 +370,7 @@ body {
 }
 .person .personText{
     font-size: 3vh;
+    text-align: center;
 }
 .person .personImg{
     width:16vw ;
