@@ -575,3 +575,189 @@ body {
 #scrollToTopBtn:hover {
     background-color: #000000;
 }
+
+
+
+/* Theme button */
+
+/* Styles for the theme toggle button */
+#themeToggleButton {
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    background-color: #fff;
+    border: none;
+    padding: 1vh 0.5vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#themeToggleButton i {
+    font-size: 2vw;
+    color: #409bf7;
+}
+
+#themeToggleButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+/* Dark theme styles for the button */
+.dark-theme #themeToggleButton {
+    background-color: #333;
+    
+}
+
+.dark-theme #themeToggleButton i {
+    color: #e0e0e0;
+}
+
+.dark-theme #themeToggleButton:hover {
+    
+    background-color: #ffffff;
+}
+.dark-theme #themeToggleButton:hover i{
+color: #000000;
+transition: all 0.5s;
+}
+
+
+/* Theme switched */
+
+/* Dark theme styles */
+
+
+.dark-theme .header {
+    background-image: linear-gradient(to right, #082265, #000000);
+}
+
+ .main .dark-theme {
+    background-image:-moz-repeating-radial-gradient(#000000, #000000 10%, #082265 10%, #082265 20%);
+}
+
+/* .dark-theme .info :not(.infoTitle, .infoText, .featuresList){
+    filter: grayscale(1);
+} */
+.dark-theme .logoImage{
+    filter: invert(1);
+}
+.dark-theme .startOrderingButton{
+    border: 2px solid #ffffff;
+}
+
+.dark-theme .footer{
+    background-image: linear-gradient(to right, #082265, #000000);
+}
+.dark-theme .divider{
+    background-image: linear-gradient(to right, #082265, #000000);
+}
+.dark-theme .ordering{
+    background-image: linear-gradient(to right, #082265, #000000);
+}
+.dark-theme .infoText{
+    background-image: linear-gradient(to right, #082265, #000000);
+}
+ .dark-theme .mainName{
+    color: #000000  ;
+    text-shadow: white 0px 0px 10px;
+}
+.dark-theme .mainName::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(245, 242, 230);
+    border-radius: 999px;
+}
+.dark-theme .swiper-container{
+    background-color: #4b4b4b;
+}
+.dark-theme .testimonialP{
+    color: #e0e0e0;
+}
+.dark-theme .swiper-slide h4{
+    color: #e0e0e0;
+}
+.dark-theme #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 100;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.dark-theme #scrollToTopBtn:hover {
+    background-color: #409bf7;
+}
+.dark-theme .featuresList li{
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme .header {
+    background-image: linear-gradient(to right, #333, #555);
+}
+
+.dark-theme .main {
+    background-image: url("../Images/plane_dark.jpg");
+}
+
+.dark-theme .info,
+.dark-theme .footer,
+.dark-theme .ordering {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-theme .infoText,
+.dark-theme .featuresList li,
+.dark-theme .testimonial,
+.dark-theme .swiper-container {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-theme .startOrderingButton {
+    background-color: #444;
+}
+
+.dark-theme .startOrderingButton:hover {
+    background-color: #00af17;
+    color: #333;
+} */

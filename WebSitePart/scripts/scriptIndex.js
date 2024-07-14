@@ -101,3 +101,31 @@ scrollToTopBtn.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+
+// Theme button
+
+
+const themeToggleButton = document.getElementById('themeToggleButton');
+const body = document.body;
+
+// Function to toggle theme and save preference
+function toggleTheme() {
+    body.classList.toggle('dark-theme');
+    
+
+    let theme = 'light';
+    if (body.classList.contains('dark-theme')) {
+        theme = 'dark';
+    }
+    localStorage.setItem('theme', theme);
+}
+
+// Check saved theme preference on page load
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'dark') {
+    body.classList.add('dark-theme');
+}
+
+// Event listener for theme toggle button
+themeToggleButton.addEventListener('click', toggleTheme);
