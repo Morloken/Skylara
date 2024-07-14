@@ -9,3 +9,21 @@ window.addEventListener('resize', function() {
         navUl.classList.remove('mobile-visible');
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let nicknameText = "Default nickname"; 
+    let emailText = "Default email";
+    let idText = "Default ID";
+    
+    
+    
+    
+    document.querySelector('.nicknameText').textContent = nicknameText;
+    
+    document.querySelector('.emailText').textContent = emailText;
+    
+    document.querySelector('.idText').textContent = idText;
+
+   
+});
