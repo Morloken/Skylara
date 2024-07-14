@@ -371,7 +371,11 @@ body {
 .person .personText{
     font-size: 3vh;
 }
-
+.person .personImg{
+    width:16vw ;
+    height: 16vw;
+    border-radius:25%;
+}
 
 
 @media (max-width: 1024px) {
