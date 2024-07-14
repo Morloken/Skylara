@@ -547,3 +547,31 @@ body {
   .magictime.visible {
     opacity: 1;
   }
+
+
+
+
+
+
+
+  /* Scroll to Top Button Styles */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 100;
+    background-color: #409bf7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #000000;
+}
