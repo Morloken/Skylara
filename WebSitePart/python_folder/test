@@ -1,9 +1,10 @@
 from app import app, database
+
 def main():
     with app.app_context():
-        user_id = 4
-        orders = database.get_user_orders(user_id)
-        print(f"Заказы пользователя с ID {user_id}:")
+        username = "qwe" #введіть нікнейм юзера
+        orders = database.get_user_orders(username)
+        print(f"Замовлення користувача з нікнеймом {username}:")
         for order in orders:
             print(order)
 
