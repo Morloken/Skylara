@@ -54,24 +54,24 @@
 
   <body>
     <header class="header  animate__animated animate__fadeInDown" id="header">
-      <div class="logo">
+      <div class="logo" title="Skylara">
         <a href="../Htmls/index.html">
           <img class="logoImage" src="../Images/logo.png" alt="logo" />
         </a>
       </div>
 
-      <div class="menuButton" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+      <div class="menuButton" onclick="toggleMenu()"><i class="fa-solid fa-bars" title="Menu"></i></div>
       <nav id="nav">
 
         <ul class="navUl">
-          <li class=""><a href="../Htmls/index.html">Головна</a></li>
-          <li class=""><a href="../Htmls/aboutUs.html">Про нас</a></li>
-          <li class=""><a href="../Htmls/ordering.html">Замовлення</a></li>
-          <li class=""><a href="../Htmls/profile.html">Профіль</a></li>
+          <li class=""><a href="../Htmls/index.html" title="Головна">Головна</a></li>
+          <li class=""><a href="../Htmls/aboutUs.html" title="Про нас">Про нас</a></li>
+          <li class=""><a href="../Htmls/ordering.html" title="Замовлення">Замовлення</a></li>
+          <li class=""><a href="../Htmls/profile.html" title="Профіль">Профіль</a></li>
         </ul>
       </nav>
 
-      <div id="headerBookingButtonContainer"></div>
+      <div id="headerBookingButtonContainer" ></div>
     </header>
 
     <div class="main" id="">
@@ -88,10 +88,9 @@
 
       <div class="ordering">
         <p>Почніть бронювання квитків прямо тут:</p>
-        <button
+        <button title="Замовлення чекає на тебе!"
           id="bookingButton"
-          class="startOrderingButton animate__animated animate__tada"
-        >
+          class="startOrderingButton animate__animated animate__tada">
           <a href="#">Бронювання</a>
         </button>
       </div>
