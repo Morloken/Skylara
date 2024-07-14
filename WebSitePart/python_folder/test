@@ -1,0 +1,11 @@
+from app import app, database
+def main():
+    with app.app_context():
+        user_id = 4
+        orders = database.get_user_orders(user_id)
+        print(f"Заказы пользователя с ID {user_id}:")
+        for order in orders:
+            print(order)
+
+if __name__ == "__main__":
+    main()
