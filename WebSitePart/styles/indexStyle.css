@@ -155,7 +155,7 @@ body {
     margin: 2vh;
     font-size: 2.0vw;
     font-family: 'Playwrite DK Uloopet', sans-serif;
-    background-color: #17dde4;
+    background-color: #000000;
     border-radius: 2vh;
 }
 
@@ -168,7 +168,7 @@ body {
 }
 
 .startOrderingButton:hover {
-    background-color: #000000;
+    background-color: #00af17;
     color: #409bf7;
     cursor: pointer;
     animation: pulse 1s infinite;
