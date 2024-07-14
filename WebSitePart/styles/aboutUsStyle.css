@@ -377,14 +377,22 @@ body {
     height: 16vw;
     border-radius:25%;
 }
+.persons:nth-child(3) .personImg{
+    
+    height: 20vw;
+}
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
    .persons{
     flex-direction: column;
    }
    .person{
     width: 60vw;
+   }
+   .person .personImg{
+    height: 30vw;
+    width: 30vw;
    }
    
 }
