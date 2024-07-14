@@ -638,9 +638,6 @@ transition: all 0.5s;
     background-image:-moz-repeating-radial-gradient(#000000, #000000 10%, #082265 10%, #082265 20%);
 }
 
-/* .dark-theme .info :not(.infoTitle, .infoText, .featuresList){
-    filter: grayscale(1);
-} */
 .dark-theme .logoImage{
     filter: invert(1);
 }
@@ -708,56 +705,3 @@ transition: all 0.5s;
 .dark-theme .featuresList li{
     background-color: #000000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .dark-theme {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-theme .header {
-    background-image: linear-gradient(to right, #333, #555);
-}
-
-.dark-theme .main {
-    background-image: url("../Images/plane_dark.jpg");
-}
-
-.dark-theme .info,
-.dark-theme .footer,
-.dark-theme .ordering {
-    background-color: #333;
-    color: #e0e0e0;
-}
-
-.dark-theme .infoText,
-.dark-theme .featuresList li,
-.dark-theme .testimonial,
-.dark-theme .swiper-container {
-    background-color: #444;
-    color: #e0e0e0;
-    border-color: #555;
-}
-
-.dark-theme .startOrderingButton {
-    background-color: #444;
-}
-
-.dark-theme .startOrderingButton:hover {
-    background-color: #00af17;
-    color: #333;
-} */
