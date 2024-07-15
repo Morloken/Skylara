@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ${['A', 'B', 'C', 'D', 'E', 'F'].map(seat => `<option value="${seat}">${seat}</option>`).join('')}
               </select>
             </div>
-            <button class="saleBuyButton" disabled>Buy Now</button>
+            <button class="saleBuyButton" disabled title="Виберіть місце або ряд">Buy Now</button>
           `;
       
           salesContainer.appendChild(sale);
