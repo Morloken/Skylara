@@ -536,3 +536,23 @@ body {
     cursor: not-allowed;
   }
   
+
+
+
+
+  @media (max-width: 768px) {
+    .sale {
+        width: 100%; 
+    }
+
+
+
+    .cart {
+        width: 100%; 
+    }
+
+
+    .cartItem {
+        width: 100%; 
+    }
+  }
