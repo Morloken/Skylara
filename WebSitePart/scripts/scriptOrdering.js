@@ -70,23 +70,23 @@ document.addEventListener('DOMContentLoaded', function () {
           const sale = document.createElement('div');
           sale.classList.add('sale');
           sale.innerHTML = `
-            <h2 class="saleName">Special Offer</h2>
+            <h2 class="saleName">Спеціальна пропозиція</h2>
             <h3 class="saleCountry">${country.name}</h3>
             <img src="${country.image}" alt="${country.name}" />
             <div class="saleInfo">
-              <p class="saleDescription">Great deals to ${country.name}!</p>
+              <p class="saleDescription">Вигідна пропозиція для подорожі у ${country.name}!</p>
               <p class="salePrice">$${price}</p>
               <p class="saleDiscount">$${price + 200}</p>
-              <label for="rowSelect">Row:</label>
+              <label for="rowSelect">Ряд:</label>
               <select class="rowSelect">
                 ${Array.from({ length: 30 }, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
               </select>
-              <label for="seatSelect">Seat:</label>
+              <label for="seatSelect">Місце:</label>
               <select class="seatSelect">
                 ${['A', 'B', 'C', 'D', 'E', 'F'].map(seat => `<option value="${seat}">${seat}</option>`).join('')}
               </select>
             </div>
-            <button class="saleBuyButton" disabled title="Виберіть місце або ряд">Buy Now</button>
+            <button class="saleBuyButton" disabled title="Виберіть місце або ряд">Придбати</button>
           `;
       
           salesContainer.appendChild(sale);

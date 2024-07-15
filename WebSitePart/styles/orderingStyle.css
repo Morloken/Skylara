@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;  
+    background-image: linear-gradient(to right, #17dde4, #409bf7);
 }
 .header {
     display: flex;
@@ -452,7 +453,7 @@ body {
     color: white;
     font-family: 'Libre Franklin', sans-serif;
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
-    border: 6px solid blue;
+    border: 0.3vh solid rgb(255, 255, 255);
   }
   
   .cartItems {
