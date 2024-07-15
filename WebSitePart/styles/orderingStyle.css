@@ -430,3 +430,96 @@ body {
 #scrollToTopBtn:hover {
     background-color: #000000;
 }
+
+
+
+
+
+
+/* cart css */
+
+/* Cart Section */
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh;
+    text-align: center;
+    border-radius: 1vh;
+    width: 80vw;
+    margin: 2vh auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border: 6px solid blue;
+  }
+  
+  .cartItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+  }
+  
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh;
+    text-align: center;
+    border-radius: 1vh;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    flex-wrap: wrap;
+  }
+  
+  .cartItem img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 1vh;
+    border: 1px solid white;
+  }
+  
+  .cartItem .saleCountry {
+    font-size: 3vh;
+    color: #74b1ee;
+  }
+  
+  .cartItem .salePrice {
+    font-size: 3vh;
+    color: #08fb0c;
+    border-top: 2px solid white;
+    margin-top: 1.5vh;
+  }
+  
+  .cartItem .saleDiscount {
+    font-size: 1.8vh;
+    color: #ff2200d3;
+    text-decoration: line-through;
+  }
+  
+  .cartItem .saleDescription {
+    font-size: 2vh;
+    font-weight: 500;
+  }
+  
+  .cartItem .removeButton {
+    background-color: #ff2200;
+    border: none;
+    color: white;
+    font-size: 3vh;
+    padding: 1vh 1.5vw;
+    border-radius: 1vh;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+  
+  .cartItem .removeButton:hover {
+    cursor: pointer;
+    background-color: #000100;
+    transition: all 0.5s;
+  }
+  
