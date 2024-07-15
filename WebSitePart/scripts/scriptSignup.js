@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let user = {
                     username: username,
                     password: password,
-                    email: email
+                    email: email 
                 };
 
                 try {
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("signupForm").reset();
 
                 try {
-                    window.location.href = "../Htmls/index.html"; // Переконайтеся, що шлях правильний
+                    window.location.href = "../Htmls/index.html";
                     console.log("Redirecting to main page");
                 } catch (e) {
                     console.error("Error redirecting to main page", e);
