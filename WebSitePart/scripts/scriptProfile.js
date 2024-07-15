@@ -15,6 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let nicknameText = "Default nickname"; 
     let emailText = "Default email";
     let idText = "Default ID";
+
+
+    if(localStorage.getItem('username') != null){ 
+        nicknameText = localStorage.getItem('username');
+    }
+
+    if(localStorage.getItem('email') != null){
+        emailText = localStorage.getItem('email');
+    }
+
+    
+        idText = Math.floor(Math.random() * (100000 - 10000 + 1)) + 10000;
+
     
     
     
