@@ -523,3 +523,14 @@ body {
     transition: all 0.5s;
   }
   
+
+
+  .cartSummary {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .saleBuyButton:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
