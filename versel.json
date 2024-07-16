@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "../Htmls/signup.html",
+        "permanent": true
+      }
+    ]
+  }
+  
