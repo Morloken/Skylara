@@ -21,7 +21,7 @@ if (enterButton) {
         let storedEmail = localStorage.getItem('userEmail');
 
         // Перевірка даних
-        if (storedPassword === password && storedEmail === email) {
+        if (storedPassword == password && storedEmail == email) {
             window.location.href = "main.html";
         } else {
             let answer = confirm("Невірний логін або пароль. \n\nЧи хочете зареєструватися?");
