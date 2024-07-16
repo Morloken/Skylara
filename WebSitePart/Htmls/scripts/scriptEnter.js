@@ -17,18 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
       let storedEmail = localStorage.getItem("userEmail");
 
       // Перевірка даних
-      if (storedPassword == password) {
-        console.log("Password match");
-        if (storedEmail == email) {
-          console.log("Email match");
-          window.location.href = "main.html";
-        } else {
-          let answer = confirm(
-            "Невірний логін або пароль. \n\nЧи хочете зареєструватися?"
-          );
-          if (answer) {
-            window.location.href = "index.html";
-          }
+      if (storedPassword === password && storedEmail === email) {
+        window.location.href = "main.html";
+      } else {
+        const message = storedPassword === password
+          ? "Невірний логін або пароль. \n\nЧи хочете зареєструватися?"
+          : "Невірний логін або пароль.";
+        if (confirm(message)) {
+          window.location.href = "index.html";
         }
       }
     });
