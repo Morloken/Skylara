@@ -2,7 +2,7 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "../Htmls/signup.html",
+        "destination": "/WebSitePart/Htmls/signup.html",
         "permanent": true
       }
     ]
