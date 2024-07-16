@@ -17,8 +17,8 @@ if (enterButton) {
         let email = emailInput.value.trim();
 
         // Отримання даних з localStorage
-        let storedPassword = localStorage.getItem('userPassword');
-        let storedEmail = localStorage.getItem('userEmail');
+        let storedPassword = localStorage.getItem('userPassword').valueOf();
+        let storedEmail = localStorage.getItem('userEmail').valueOf();
 
         // Перевірка даних
         if (storedPassword == password && storedEmail == email) {
