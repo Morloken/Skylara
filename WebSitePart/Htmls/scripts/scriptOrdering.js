@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalAmountElement = document.querySelector('.totalAmount');
   
     const countries = [
-      { name: 'USA', image: '../Images/usa.jpg' },
-      { name: 'France', image: '../Images/france.jpg' },
-      { name: 'Japan', image: '../Images/japan.jpg' },
-      { name: 'Australia', image: '../Images/australia.jpg' },
-      { name: 'Italy', image: '../Images/italy.jpg' },
-      { name: 'Ukraine', image: '../Images/ukraine.jpg' }
+      { name: 'USA', image: 'Images/usa.jpg' },
+      { name: 'France', image: 'Images/france.jpg' },
+      { name: 'Japan', image: 'Images/japan.jpg' },
+      { name: 'Australia', image: 'Images/australia.jpg' },
+      { name: 'Italy', image: 'Images/italy.jpg' },
+      { name: 'Ukraine', image: 'Images/ukraine.jpg' }
     ];
     
     

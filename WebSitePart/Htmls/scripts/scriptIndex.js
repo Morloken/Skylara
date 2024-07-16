@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 
 
 document.getElementById('bookingButton').addEventListener('click', function() {
-    window.location.href = "../Htmls/ordering.html";
+    window.location.href = "ordering.html";
 });
 
 

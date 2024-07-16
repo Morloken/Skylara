@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(exitButton) {
                 let answer= confirm("Ви впевнені, що хочете вийти з профілю?");
                 if(answer) {
-                    window.location.href = "../Htmls/signup.html";
+                    window.location.href = "index.html";
                     localStorage.clear();
                 }
         }

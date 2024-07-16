@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             
             if(localStorage.getItem(password) === password && localStorage.getItem(email) === email) {
-                window.location.href = "../Htmls/index.html";
+                window.location.href = "main.html";
             }else{
                 let answer = confirm("Невірний логін або пароль. \n\nЧи хочете зареєструватися?");
                 if(answer) {
-                    window.location.href = "../Htmls/signup.html";
+                    window.location.href = "signup.html";
                 }
             }
             
