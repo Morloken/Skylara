@@ -705,3 +705,48 @@ transition: all 0.5s;
 .dark-theme .featuresList li{
     background-color: #000000;
 }
+
+
+
+
+/* tg bot */
+.tgBot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tgBot .tgBotText{
+
+    font-size: 3vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+    padding: 1vh;
+}
+.tgBot .tgBotIcon{
+
+    font-size: 6vw;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tgBot .tgBotLink{
+
+    font-size: 3vw;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2vh;
+}
+.tgBot .tgBotLink:hover{
+    color: #409bf7;
+}
+@media screen and (max-width: 768px) {
+    .tgBot .tgBotText{
+        font-size: 6vw;
+    }
+    .tgBot .tgBotIcon{
+        font-size: 12vw;
+    }
+    .tgBot .tgBotLink{
+        font-size: 6vw;
+    }
+}
