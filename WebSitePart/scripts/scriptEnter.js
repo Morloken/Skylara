@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             const passwordInput = document.getElementById("enterPassword");
             const emailInput = document.getElementById("enterEmail");
-0
+
             
             let password = passwordInput.value.trim();
             let email = emailInput.value.trim();
