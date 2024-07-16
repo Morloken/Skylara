@@ -461,3 +461,11 @@ body {
     background-color: #000000;
     animation: shake 0.5s;
 }
+@media all and (max-width: 768px) {
+
+    .exitFromProfile{
+        width: 20vw;
+        font-size: 3vw;
+    }
+    
+}
