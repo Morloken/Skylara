@@ -59,4 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("Signup button not found");
     }
+
+
+
+    
 });

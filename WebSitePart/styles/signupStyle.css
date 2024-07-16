@@ -477,3 +477,21 @@ body {
 #scrollToTopBtn:hover {
     background-color: #000000;
 }
+
+
+/* LInk to Enter Page */
+.toEnterPageText{
+    margin-top: 1vh;
+    border-top: 1px solid white;
+}
+.toEnterPageLink{
+    color: white;
+    text-decoration: none;
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 1vh;
+    background-color: #409bf7;
+    border-radius: 1vh;
+}
+.toEnterPageLink:hover{
+    background-color: #0f84f9;
+}       
