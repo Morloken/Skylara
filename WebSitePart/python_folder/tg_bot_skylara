@@ -1,0 +1,105 @@
+import telebot
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+from datetime import datetime
+from TOKEN_ import TOKEN
+
+API_TOKEN = TOKEN
+bot = telebot.TeleBot(API_TOKEN)
+
+
+seats = ['A', 'B', 'C', 'D', 'E', 'F']
+rows = list(range(1, 31))
+user_data = {}
+
+def create_reply_keyboard(options):
+    markup = ReplyKeyboardMarkup(one_time_keyboard=True)
+    for option in options:
+        markup.add(KeyboardButton(option))
+    return markup
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    chat_id = message.chat.id
+    user_data[chat_id] = {}
+    welcome_text = (
+        "Привіт! Я бот від команди Skylara. Я був створений, щоб допомогти тобі вибрати та забронювати авіаквиток.\n"
+        "Використай команду /help для перегляду списку всіх доступних команд."
+    )
+    bot.send_message(chat_id, welcome_text)
+    bot.send_message(chat_id, "Будь ласка, напиши своє ім'я та прізвище:")
+
+@bot.message_handler(commands=['help'])
+def send_help(message):
+    help_text = (
+        "Я бот для бронювання авіаквитків від Skylara. Ось що я можу зробити:\n"
+        "- /start: Почати процес бронювання авіаквитка.\n"
+        "- /prices: Показати ціни на класи перелетів.\n"
+        "- Після введення команди /start, я допоможу вам:\n"
+        "  1. Вказати ваше ім'я та прізвище.\n"
+        "  2. Вибрати рейс, ряд, місце та пункт призначення.\n"
+        "  3. Підтвердити або скасувати бронювання.\n"
+        "Якщо у вас є питання, будь ласка, зв'яжіться з нашою підтримкою."
+    )
+    bot.send_message(message.chat.id, help_text)
+
+@bot.message_handler(commands=['prices'])
+def send_prices(message):
+    chat_id = message.chat.id
+    prices_info = "Ціни на переліт:\nЕконом: 100$\nПреміум-економ: 200$\nБізнес: 300$\нПерший клас: 400$"
+    bot.send_message(chat_id, prices_info)
+
+@bot.message_handler(func=lambda message: True, content_types=['text'])
+def handle_text(message):
+    chat_id = message.chat.id
+    if chat_id not in user_data:
+        bot.send_message(chat_id, "Будь ласка, використайте команду /start, щоб почати процес бронювання.")
+        return
+
+    if 'name' not in user_data[chat_id]:
+        user_data[chat_id]['name'] = message.text
+        bot.send_message(chat_id, f"Привіт, {user_data[chat_id]['name']}! Напиши свій рейс:")
+    elif 'flight' not in user_data[chat_id]:
+        user_data[chat_id]['flight'] = message.text
+        bot.send_message(chat_id, "Напиши свій ряд (від 1 до 30):", reply_markup=create_reply_keyboard([str(row) for row in rows]))
+    elif 'row' not in user_data[chat_id]:
+        try:
+            row = int(message.text)
+            if 1 <= row <= 30:
+                user_data[chat_id]['row'] = row
+                bot.send_message(chat_id, "Оберіть місце:", reply_markup=create_reply_keyboard(seats))
+            else:
+                bot.send_message(chat_id, "Будь ласка, введіть ряд від 1 до 30.")
+        except ValueError:
+            bot.send_message(chat_id, "Будь ласка, введіть дійсний номер ряду.")
+    elif 'seat' not in user_data[chat_id]:
+        user_data[chat_id]['seat'] = message.text
+        bot.send_message(chat_id, "Напиши пункт призначення:")
+    elif 'destination' not in user_data[chat_id]:
+        user_data[chat_id]['destination'] = message.text
+        user_data[chat_id]['time'] = datetime.now().strftime('%H:%M:%S')
+        summary = (f"Ім'я: {user_data[chat_id]['name']}\n"
+                   f"Рейс: {user_data[chat_id]['flight']}\n"
+                   f"Ряд: {user_data[chat_id]['row']}\n"
+                   f"Місце: {user_data[chat_id]['seat']}\n"
+                   f"Пункт призначення: {user_data[chat_id]['destination']}\n"
+                   f"Час вибору: {user_data[chat_id]['time']}\n"
+                   "Підтвердити бронювання?")
+        markup = InlineKeyboardMarkup()
+        markup.add(InlineKeyboardButton("✅", callback_data='confirm'),
+                   InlineKeyboardButton("❌", callback_data='cancel'))
+        bot.send_message(chat_id, summary, reply_markup=markup)
+
+@bot.callback_query_handler(func=lambda call: call.data in ['confirm', 'cancel'])
+def confirm_booking(call):
+    chat_id = call.message.chat.id
+    if call.data == 'confirm':
+        bot.edit_message_text(chat_id=chat_id, message_id=call.message.message_id,
+                              text=f"Шановний(а) {user_data[chat_id]['name']}, ваш рейс '{user_data[chat_id]['flight']}', ряд '{user_data[chat_id]['row']}', місце '{user_data[chat_id]['seat']}' були успішно заброньовані з {user_data[chat_id]['time']}. Удачного польоту!")
+    elif call.data == 'cancel':
+        bot.edit_message_text(chat_id=chat_id, message_id=call.message.message_id, text="Ваше бронювання скасовано.")
+    user_data.pop(chat_id, None)
+
+try:
+    bot.polling()
+except Exception as e:
+    print(f"Error: {e}")
