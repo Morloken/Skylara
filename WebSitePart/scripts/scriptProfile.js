@@ -38,8 +38,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.querySelector('.idText').textContent = idText;
 
-   
+
+
+
+    // animate__animated animate__backInRight
+    const exitButton = document.getElementsByClassName("exitFromProfile")[0];
+    
+    exitButton.addEventListener("click", function() {
+    
+        if(exitButton) {
+                let answer= confirm("Ви впевнені, що хочете вийти з профілю?");
+                if(answer) {
+                    window.location.href = "../Htmls/signup.html";
+                    localStorage.clear();
+                }
+        }
+    });
 });
+
+
+
 
 
 

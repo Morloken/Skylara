@@ -443,3 +443,21 @@ body {
 #scrollToTopBtn:hover {
     background-color: #000000;
 }
+
+.exitFromProfile{
+   width: 10vw;
+   height: 5vh;
+
+   font-size: 1.5vw;
+   background-color:#409bf7;
+   border-radius: 1vh;
+   border-bottom: 1px solid white;
+   border-right: none;
+   border-left: none;
+   border-top: none;
+   color: white;
+}
+.exitFromProfile:hover{
+    background-color: #000000;
+    animation: shake 0.5s;
+}
