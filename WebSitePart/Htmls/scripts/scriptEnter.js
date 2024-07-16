@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let email = emailInput.value.trim();
 
             
-            if(localStorage.getItem(password).valueOf == password && localStorage.getItem(email).valueOf == email) {
+            if(localStorage.getItem(password) == password && localStorage.getItem(email) == email) {
                 window.location.href = "main.html";
             }else{
                 let answer = confirm("Невірний логін або пароль. \n\nЧи хочете зареєструватися?");
