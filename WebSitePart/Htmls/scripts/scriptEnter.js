@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }else{
                 let answer = confirm("Невірний логін або пароль. \n\nЧи хочете зареєструватися?");
                 if(answer) {
-                    window.location.href = "signup.html";
+                    window.location.href = "index.html";
                 }
             }
             
