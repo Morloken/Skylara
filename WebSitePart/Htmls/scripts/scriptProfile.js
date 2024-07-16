@@ -49,8 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if(exitButton) {
                 let answer= confirm("Ви впевнені, що хочете вийти з профілю?");
                 if(answer) {
+                    let answer2 = confirm("Ви хочете видалити дані входу аккаунту?\n\nТак\nНі");
+                    if(answer2) {
                     window.location.href = "index.html";
                     localStorage.clear();
+                    }else{
+                        window.location.href = "index.html";
+                    }
                 }
         }
     });
