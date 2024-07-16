@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Password:", password);
             console.log("Email:", email);
 
-            window.location.href = "../Htmls/index.html";
+            window.location.href = "Htmls/main.html";
         });
     } else {
         console.error("Signup button not found");
